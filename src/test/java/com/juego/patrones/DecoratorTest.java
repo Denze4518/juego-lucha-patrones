@@ -85,20 +85,16 @@ class DecoratorTest {
         assertEquals(0, guerrero.getPuntosDeVida());
     }
 
-    @Test
-    @DisplayName("GuerreroDecorator con Mockito: verificar que recibirDano llama al decorado")
+   @Test
+   @DisplayName("GuerreroDecorator con Mockito: verificar que recibirDano llama al decorado")
     void testGuerreroMockitoVerificaLlamada() {
-        Personaje mockBase = mock(Personaje.class);
-        when(mockBase.getNombre()).thenReturn("MockGuerrero");
-        when(mockBase.getPuntosDeVida()).thenReturn(100);
-        when(mockBase.estaVivo()).thenReturn(true);
+    Personaje mockBase = mock(Personaje.class);
 
-        GuerreroDecorator guerrero = new GuerreroDecorator(mockBase);
-        guerrero.recibirDano(50); // 50 * 0.80 = 40
+    GuerreroDecorator guerrero = new GuerreroDecorator(mockBase);
+    guerrero.recibirDano(50); // 50 * 0.80 = 40
 
-        // Verificar que el personaje decorado recibe el daño reducido
-        verify(mockBase, times(1)).recibirDano(40);
-    }
+    verify(mockBase, times(1)).recibirDano(40);
+}
 
     // ══════════════════════════════════════════════
     //  MagoDecorator
