@@ -30,14 +30,14 @@ jobs:
         run: mvn jacoco:report
 
       - name: Subir reporte de cobertura como artefacto
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-report
           path: target/site/jacoco/
 
       - name: Subir resultados de pruebas como artefacto
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: target/surefire-reports/
