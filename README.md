@@ -91,6 +91,8 @@ juego-lucha-patrones/
 │           └── JuegoLuchaTest.java
 └── pom.xml
 ```
+##Diagrama de clase
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/b1fba454-4110-45c4-ac1b-c53149802115" />
 
 ---
 
@@ -166,6 +168,9 @@ mvn clean test
 ---
 
 ## 👥 Autores
+Jhosed Alzate Garcia
+Jose David Gonzales
+Laura Vanessa Botina Delgado
 
 - Estudiantes del curso de Ingeniería de Software II
 - Docente: Ing. Jhon Haide Cano Beltran MSc.
