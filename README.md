@@ -92,6 +92,7 @@ juego-lucha-patrones/
 └── pom.xml
 ```
 ##Diagrama de clase
+
 <img width="392" height="598" alt="image" src="https://github.com/user-attachments/assets/7af8d3da-c98b-4802-a747-783e7affe39d" />
 
 
